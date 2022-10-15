@@ -1,0 +1,111 @@
+
+                   CAB MANAGEMENT SYSTEM
+Requirements
+
+Cab management system for booking cabs, the requirements are:
+Functional requirements:
+
+1 User Registration: A registered user can login to the system, a new user have to create an account.
+1.1 User login: Registered users are logged in using
+   1.1.1 User ID: ID is checked
+   1.1.2 password: Password is checked
+1.2 User account creation: A new user account is created by asking user for
+    1.2.1 Full Name
+    1.2.2 Address
+    1.2.3 Email ID: email id is conformed by sending an OTP to given mail and asking user to     enter the OTP, if OTP matches email id is accepted. 
+    1.2.4 Mobile number: Mobile number id is conformed by sending an OTP to given number and asking user to enter the OTP, if OTP matches number         is accepted.
+    1.2.5 User ID: user is asked for a user id, the given id is checked with ids in the database, if the id is available it is conformed otherwise                  user is asked to give another id.
+    1.2.6 Password: User is asked for password with atleast 8 characters, 1 uppercase letter, 1 lowercase letter, 1 special character and a number. The password is checked if it passes the given conditions it is accepted and it's strength is shown otherwise it is rejected.
+
+2. Driver Registration
+2.1 Driver login: Registered drivers are logged in using 
+  2.1.1 User ID: ID is checked
+  2.1.1 password: Password is checked
+ 
+2.2 Driver account creation: A new driver account is created by asking for
+  2.2.1 Full Name
+  2.2.2 Address
+    2.2.3 Email ID: email id is conformed by sending an OTP to given mail and asking user to enter the OTP, if OTP matches email id is accepted. 
+    2.2.4 Mobile number: Mobile number id is conformed by sending an OTP to given number and asking to enter the OTP, if OTP matches number is accepted.
+    2.2.5 User ID: user is asked for a user id, the given id is checked with ids in the database, if the id is available it is conformed otherwise asked to give another id.
+    2.2.6 Password: Driver is asked for password with atleast 8 characters, 1 uppercase letter, 1 lowercase letter, 1 special character and a number. The password is checked if it passes the given conditions it is accepted and it's strength is shown otherwise it is rejected.
+  2.2.7 Drivers licence: drivers licence is taken and it is checked for any criminal record, driving offences etc, if the diver is clear they are accepted and account is created.
+   2.2.8 Car registration number: registration number is checked and is accepted if their is no criminal records
+
+3.Home page: after login user and driver is directed to their respective home page
+  3.1 User home page have the following buttons
+    3.1.1 Start ride: user can start ride
+    3.1.2 Book ride for later
+  3.2 Driver home page have the following buttons
+    3.2.1 Show availability: drivers can show their availability when they start and switch off when they are not available
+   3.2.1 Request lists: list of different ride requests are shown and drivers can select from the list
+
+
+4. Check availability: availability of the ride is checked using
+  4.1 Search using location: user can give starting and destination location by
+    4.1.1  Selecting location from map
+    4.1.2 selecting from saved locations if the given location in the radius of the system it is accepted otherwise rejected
+ 4.2 Show availablity : the available cabs in the given route is displayed, if cabs are not available the time of availablity is shown
+
+5. Select Ride: the user can select the ride from
+  5.1 Show available car types: user is given list different car types with rates
+    5.1.1 Sedan
+    5.1.2 Mini SUV
+    5.1.3 Sedan 
+  5.2 Show available drivers: list of available drivers with their profile is shown
+
+6. Book ride: after selecting the cab  type and driver the user can book ride using the book ride button then the 
+  6.1 Driver is notified and arrival location is given
+  6.2 User is given live location of the driver
+
+7. Ride conformation: when the user enters the cab the ride is conformed by
+  7.1 Sending OTP to user: a OTP is send to user phone number
+  7.2 Conforming OTP in drivers app: driver is asked to enter the OTP given to user
+
+8. Ride cancellation: both user and driver cancel the ride
+  8.1 User cancellation: notification is send to driver and compensation fine is added to user profile which will be detected in next ride
+  8.2 Driver cancellation: notification is send to user and compensation fine is added to driver profile which will be dedected in next ride.
+
+9. Payment: User is given options to pay using 
+  9.1 Debit/Credit card
+  9.2 UPI
+  9.3 Pay on ride completion
+
+10. Ride completion: ride is completed when
+  10.1 User clicks ride completion button and
+  10.2 Driver clicks the ride completion button
+
+11. Profile ratting
+  11.1 Driver ratting: the user is asked to rate driver from 1 to 5
+  11.2 User ratting: the driver is asked to rate user from 1 to 5
+  11.3 Report misbehaviours: both driver and user can report misbehaviour
+
+12. Live location tracking: The location of the cab is tracked using the mobile location of the driver
+
+13. Profile Updation: users and drivers are given the option to update their profile
+ 13.1 User updation: the user can update
+    13.1.1 Profile details
+    13.1.2 Saved locations
+  13.2 Driver updation: driver can update 
+    13.2.1 profile details
+    13.2.2 licence
+    13.2.3 registration number
+ 
+14. Web application
+15. Adding other vehicles like auto, motor bikes
+16. Seperate section for females with female drivers
+17. Pooling rides in same direction
+18. Cab renting facility
+
+Non functional requirements:
+1. Performance: the performance is
+ 1.1 Quick response
+ 1.2 Easy accesability
+
+2. User interface: the UI have to be
+ 2.1 User friendly
+ 2.2 Graphical
+
+3. Safety: the safety is ensure using
+ 3.1 Checking driver details before  accepting
+ 3.2 Banning users and drivers with misbehaviour from the system.

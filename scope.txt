@@ -1,0 +1,74 @@
+
+Cab Management System
+Inscope and Out of Scope
+
+Inscope:
+1 User Registration
+ 1.1 User login
+ 1.2 User account creation
+ 
+2. Driver Registration
+  2.1 Driver login
+  2.2 Driver account creation: 
+
+3.Home page
+ 3.1 User home page 
+  3.1.1 Start ride
+  3.1.2 Book ride for later
+ 3.2 Driver home page 
+  3.2.1 Show availability
+ 3.2.1 Request lists:
+
+3. Check availability: 
+ 3.1 Search using location: 
+   3.1.1  Selecting location from map
+   3.1.2 selecting from saved locations 
+ 3.2 Show availablity 
+
+4. Select Ride
+ 4.1 Show available car types
+ 4.2 Show available drivers
+
+5. Book ride
+ 5.1 Driver is notified and arrival location is given
+ 5.2 User is given live location of the driver
+
+6. Ride conformation
+ 6.1 Sending OTP to user: a OTP is send to user phone number
+ 6.2 Conforming OTP in drivers app: driver is asked to enter the OTP given to user
+
+7. Ride cancellation: both user and driver cancel the ride
+ 7.1 User cancellation
+ 7.2 Driver cancellation
+
+8. Payment
+ 8.1 Debit/Credit card
+ 8.2 UPI
+ 8.3 Pay on ride completion
+
+9. Ride completion
+ 9.1 User clicks ride completion button and
+ 9.2 Driver clicks the ride completion button
+
+10. Profile ratting
+ 10.1 Driver ratting
+ 10.1 User ratting
+ 10.3 Report misbehaviours
+
+11. Live location tracking
+
+12. Profile Updation
+ 12.1 User updation
+  12.2 Driver updation
+
+1. Performance
+2. User interface
+3. Safety
+
+Out of Scope:
+13. Web application
+14. Adding other vehicles like auto, motor bikes
+15. Seperate section for females with female drivers
+16. Pooling rides in same direction
+17. Cab renting facility
+
