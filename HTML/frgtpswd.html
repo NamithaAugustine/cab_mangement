@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forgot-password</title>
+    <style>
+        body {
+            /* background-image: url("https://t4.ftcdn.net/jpg/03/06/46/11/240_F_306461162_BUWu7SoYoh8riqKMzBMTGfRdJNzeCt7E.jpg"); */
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="login.html" method="post" id="forgotPassword" onsubmit="validate(event)";>
+        <br />
+        <br />
+        <label for="phoneNumber"><b>Phone Number:</b></labels>
+            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Your Phone Number" minlength="10" maxlength="10" required>
+            <br />
+            <label><b>OTP:</b></label>
+            <input type="text" id="otp" name="otp" placeholder="Your OTP" required>
+            <br />
+            <label><b>New Password</b></label>
+            <input type="password" id="npassword" name="npassword" placeholder="your new password" minlength="8" maxlength="50" required>
+            <br />
+            <label><b>Conform Password</b></label>
+        <input type="password" id="cpassword" name="cpassword" placeholder="your new password" minlength="8" maxlength="10" required>
+        <br/>
+        <button onclick="return validate()" style="background-color: white" type="submit"
+        class="btn btn-primary btn-fluid" id="btn-login">Create</button>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" crossorigin="anonymous">
+    </script>
+
+<script>
+
+    var btnLogin = document.getElementById('btn-login');
+    function validate(e) {
+ 
+        var otp = document.forms[loginform]['otp'].value;
+        var password = document.forms[loginform]['npassword'].value;
+
+        var phoneNumber = document.forms[loginform]['phoneNumber'].value;
+
+        var cpassword = document.forms[loginform]['cpassword'].value;
+
+        var error = document.getElementById('error-messages').value;
+
+        if (otp.length == 0 || npassword.length == 0 || phoneNumber.length == 0 || cpassword.length == 0 || npassword!=cpassword) {
+            e.preventDefault();
+        }
+
+        var elements = document.querySelectorAll('#loginform input');
+        elements.forEach(e => {
+            e.addEventListener('keyup', function () {
+                console.log(document.getElementById('password').validity.valid);
+                var otp = document.forms["loginform"]["otp"];
+                var password = document.forms["loginform"]["npassword"];
+                var password = document.forms["loginform"]["phoneNumber"];
+                var password = document.forms["loginform"]["cpassword"];
+
+                if (otp.value == "" || npassword.value == "" || phoneNumber.value=="" || cpassword.value=="" || npassword.value!=cpassword.value) {
+                    btnLogin.setAttribute('disabled', true);
+                }
+                else {
+                    btnLogin.removeAttribute('disabled');
+                }
+            })
+        })
+
+
+    }
+    </script>
+
+</body>
+
+
+</html>

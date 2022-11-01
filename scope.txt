@@ -9,7 +9,7 @@ Inscope:
  
 2. Driver Registration
   2.1 Driver login
-  2.2 Driver account creation: 
+  2.2 Driver account creation:  
 
 3.Home page
  3.1 User home page 
