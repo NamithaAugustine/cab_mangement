@@ -7,32 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>forgot-password</title>
     <style>
-        body {
-            /* background-image: url("https://t4.ftcdn.net/jpg/03/06/46/11/240_F_306461162_BUWu7SoYoh8riqKMzBMTGfRdJNzeCt7E.jpg"); */
+        .form {
+            height: 50vh;
+            width:50vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color:#006666;
+            margin-left: 25%;
+            margin-top: 10%;
         }
     </style>
 </head>
 
 <body>
 
+<div class="form">
     <form action="login.html" method="post" id="forgotPassword" onsubmit="validate(event)";>
         <br />
         <br />
+        <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Forgot Password</h3>
         <label for="phoneNumber"><b>Phone Number:</b></labels>
             <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Your Phone Number" minlength="10" maxlength="10" required>
             <br />
-            <label><b>OTP:</b></label>
+            <label><b>OTP:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label>
             <input type="text" id="otp" name="otp" placeholder="Your OTP" required>
             <br />
-            <label><b>New Password</b></label>
+            <label><b>New Password&nbsp;&nbsp;</b></label>
             <input type="password" id="npassword" name="npassword" placeholder="your new password" minlength="8" maxlength="50" required>
             <br />
-            <label><b>Conform Password</b></label>
+            <label><b>Conform&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label>
         <input type="password" id="cpassword" name="cpassword" placeholder="your new password" minlength="8" maxlength="10" required>
         <br/>
-        <button onclick="return validate()" style="background-color: white" type="submit"
-        class="btn btn-primary btn-fluid" id="btn-login">Create</button>
+        <br/>
+        <center><button onclick="return validate()" style="background-color: white" type="submit"
+        class="btn btn-primary btn-fluid" id="btn-login">Create</button></center>
     </form>
+</div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" crossorigin="anonymous">
     </script>
